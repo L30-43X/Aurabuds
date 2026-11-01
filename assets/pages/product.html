@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurabuds Zero | Product Details</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="bg">
+            <div class="container">
+                <div class="contant">
+
+                    <div class="logo">
+                        <a href="../../index.html">
+                            <img src="../media/logo.png" alt="Aurabuds Logo">
+                        </a>
+                    </div>
+
+                    <div class="nav">
+                        <a href="../../index.html">Home</a>
+                        <a href="category.html">Categories</a>
+                        <a href="">About Us</a>
+                    </div>
+
+                    <div class="header-actions">
+                        <a href="cart.html" class="cart-btn"
+                            aria-label="View shopping cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-count" id="cart-count">0</span>
+                        </a>
+
+                        <div class="header-btn">
+                            <a href="">Get Yours</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- PRODUCT DETAILS -->
+    <main>
+
+        <section class="product-detail">
+            <div class="bg">
+                <div class="container">
+                    <div class="contant">
+
+                        <!-- PRODUCT GALLERY -->
+                        <div class="product-gallery">
+
+                            <div class="product-thumbnails">
+                                <button class="thumbnail active"
+                                    type="button"
+                                    data-image="../media/earbuds-no-background.png"
+                                    aria-label="View front product image">
+                                    <img src="../media/earbuds-no-background.png"
+                                        alt="Aurabuds Zero front view">
+                                </button>
+
+                                <button class="thumbnail"
+                                    type="button"
+                                    data-image="../media/earbuds-dark.jpg"
+                                    aria-label="View earbuds image">
+                                    <img src="../media/earbuds-dark.jpg"
+                                        alt="Aurabuds Zero earbuds">
+                                </button>
+
+                                <button class="thumbnail"
+                                    type="button"
+                                    data-image="../media/earbuds-silver.jpg"
+                                    aria-label="View charging case">
+                                    <img src="../media/earbuds-silver.jpg"
+                                        alt="Earbuds charging case">
+                                </button>
+
+                                <button class="thumbnail"
+                                    type="button"
+                                    data-image="../media/white-earbuds.avif"
+                                    aria-label="View alternate earbuds">
+                                    <img src="../media/white-earbuds.avif"
+                                        alt="Alternate earbuds view">
+                                </button>
+                            </div>
+
+                            <div class="product-main-image">
+                                <img
+                                    id="main-product-image"
+                                    src="../media/earbuds-no-background.png"
+                                    alt="Aurabuds Zero wireless earbuds">
+
+                                <button class="image-zoom"
+                                    type="button"
+                                    id="image-zoom"
+                                    aria-label="Enlarge product image">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                        <!-- PRODUCT INFORMATION -->
+                        <div class="product-information">
+
+                            <p class="small-title">WIRELESS EARBUDS</p>
+
+                            <h1>Aurabuds Zero</h1>
+
+                            <div class="detail-rating">
+                                <span class="rating-stars">★★★★★</span>
+                                <span>(4.8)</span>
+                                <span>124 reviews</span>
+                            </div>
+
+                            <p class="detail-price">$89.00</p>
+
+                            <p class="detail-description">
+                                Experience powerful sound, elegant design,
+                                and everyday comfort with Aurabuds Zero.
+                                Designed for those who move, create,
+                                and listen more.
+                            </p>
+
+                            <!-- COLOR AND VARIANT -->
+                            <div class="product-options">
+
+                                <div class="color-selection">
+                                    <p class="option-label">Color</p>
+
+                                    <div class="color-options">
+
+                                        <button
+                                            class="color-choice selected"
+                                            type="button"
+                                            data-color="Midnight Blue"
+                                            aria-label="Midnight Blue"
+                                            aria-pressed="true">
+                                            <span class="color-swatch swatch-blue"></span>
+                                        </button>
+
+                                        <button
+                                            class="color-choice"
+                                            type="button"
+                                            data-color="Pearl White"
+                                            aria-label="Pearl White"
+                                            aria-pressed="false">
+                                            <span class="color-swatch swatch-white"></span>
+                                        </button>
+
+                                        <button
+                                            class="color-choice"
+                                            type="button"
+                                            data-color="Matte Black"
+                                            aria-label="Matte Black"
+                                            aria-pressed="false">
+                                            <span class="color-swatch swatch-black"></span>
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                                <div class="variant-selection">
+                                    <label for="product-variant"
+                                        class="option-label">Variant</label>
+
+                                    <select id="product-variant">
+                                        <option value="Standard">Standard</option>
+                                        <option value="Pro">Pro</option>
+                                        <option value="Premium">Premium</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+                            <!-- QUANTITY -->
+                            <div class="quantity-selector">
+
+                                <button type="button"
+                                    id="quantity-minus"
+                                    aria-label="Decrease quantity">
+                                    &minus;
+                                </button>
+
+                                <input type="number"
+                                    id="product-quantity"
+                                    value="1"
+                                    min="1"
+                                    max="99"
+                                    aria-label="Product quantity">
+
+                                <button type="button"
+                                    id="quantity-plus"
+                                    aria-label="Increase quantity">
+                                    +
+                                </button>
+
+                            </div>
+
+
+                            <!-- PURCHASE BUTTONS -->
+                            <div class="purchase-actions">
+
+                                <button type="button"
+                                    class="detail-add-cart"
+                                    id="detail-add-cart">
+                                    <i class="fa-solid fa-lock"></i>
+                                    Add to Cart
+                                </button>
+
+                                <button type="button"
+                                    class="wishlist-btn"
+                                    id="wishlist-btn"
+                                    aria-pressed="false">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>Add to Wishlist</span>
+                                </button>
+
+                            </div>
+
+                            <p class="product-notice"
+                                id="product-notice"
+                                aria-live="polite"></p>
+
+
+                            <!-- PRODUCT FEATURES -->
+                            <div class="product-highlights">
+
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                    <span>Premium Sound</span>
+                                </div>
+
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-battery-full"></i>
+                                    <span>Long Battery</span>
+                                </div>
+
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-feather"></i>
+                                    <span>Lightweight</span>
+                                </div>
+
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <span>1 Year Warranty</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PRODUCT INFORMATION TABS -->
+        <section class="product-overview">
+            <div class="bg">
+                <div class="container">
+                    <div class="contant">
+
+                        <div class="overview-content">
+
+                            <div class="overview-tabs" role="tablist">
+
+                                <button class="overview-tab active"
+                                    type="button"
+                                    role="tab"
+                                    id="tab-overview"
+                                    aria-controls="panel-overview"
+                                    aria-selected="true"
+                                    data-tab="overview">
+                                    Overview
+                                </button>
+
+                                <button class="overview-tab"
+                                    type="button"
+                                    role="tab"
+                                    id="tab-specifications"
+                                    aria-controls="panel-specifications"
+                                    aria-selected="false"
+                                    data-tab="specifications">
+                                    Specifications
+                                </button>
+
+                                <button class="overview-tab"
+                                    type="button"
+                                    role="tab"
+                                    id="tab-shipping"
+                                    aria-controls="panel-shipping"
+                                    aria-selected="false"
+                                    data-tab="shipping">
+                                    Shipping &amp; Returns
+                                </button>
+
+                            </div>
+
+
+                            <!-- OVERVIEW PANEL -->
+                            <div class="overview-panel active"
+                                id="panel-overview"
+                                role="tabpanel"
+                                aria-labelledby="tab-overview">
+
+                                <h2>Built for <span>Everyday Sound</span></h2>
+
+                                <p>
+                                    Aurabuds Zero combines rich audio,
+                                    long battery life and a comfortable
+                                    fit in a modern design. Perfect for
+                                    work, workouts and your daily routine.
+                                </p>
+
+                                <ul class="product-benefits">
+                                    <li>Hi-Fi sound with deep bass</li>
+                                    <li>Up to 28 hours total battery life</li>
+                                    <li>Bluetooth 5.3 for a stable connection</li>
+                                    <li>Sweat and water resistant (IPX5)</li>
+                                    <li>Touch controls for easy use</li>
+                                </ul>
+
+                            </div>
+
+
+                            <!-- SPECIFICATIONS PANEL -->
+                            <div class="overview-panel"
+                                id="panel-specifications"
+                                role="tabpanel"
+                                aria-labelledby="tab-specifications"
+                                hidden>
+
+                                <h2>Product <span>Specifications</span></h2>
+
+                                <div class="specification-list">
+
+                                    <div>
+                                        <span>Product</span>
+                                        <strong>Aurabuds Zero</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Connectivity</span>
+                                        <strong>Bluetooth 5.3</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Battery Life</span>
+                                        <strong>Up to 28 hours</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Water Resistance</span>
+                                        <strong>IPX5</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Charging</span>
+                                        <strong>USB charging case</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Warranty</span>
+                                        <strong>1 year</strong>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- SHIPPING PANEL -->
+                            <div class="overview-panel"
+                                id="panel-shipping"
+                                role="tabpanel"
+                                aria-labelledby="tab-shipping"
+                                hidden>
+
+                                <h2>Shipping <span>&amp; Returns</span></h2>
+
+                                <p>
+                                    Your order will be prepared for dispatch
+                                    after checkout. Delivery times and
+                                    shipping costs depend on your location.
+                                </p>
+
+                                <ul class="product-benefits">
+                                    <li>Order tracking when available</li>
+                                    <li>Secure order processing</li>
+                                    <li>Contact support for return eligibility</li>
+                                    <li>Keep your order confirmation for reference</li>
+                                </ul>
+
+                                <p class="shipping-note">
+                                    Replace these details with your store's
+                                    actual shipping and return policy before
+                                    accepting customer orders.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- OVERVIEW IMAGE -->
+                        <div class="overview-image">
+                            <img src="../media/earbuds-dark.jpg"
+                                alt="Aurabuds wireless earbuds and charging case">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CUSTOMER REVIEWS -->
+        <section class="detail-reviews">
+            <div class="bg">
+                <div class="container">
+                    <div class="contant">
+
+                        <div class="detail-reviews-heading">
+                            <p class="small-title">CUSTOMER REVIEWS</p>
+                            <h2>What Our <span>Customers Say</span></h2>
+                            <p>Real feedback from real listeners.</p>
+                        </div>
+
+                        <div class="detail-review-list">
+
+                            <div class="detail-review-card">
+
+                                <div class="detail-review-person">
+                                    <img src="../media/person1.jpg"
+                                        alt="Alex Morgan">
+
+                                    <div>
+                                        <h3>Alex Morgan</h3>
+                                        <p>Music Lover</p>
+                                    </div>
+                                </div>
+
+                                <div class="rating-stars">★★★★★</div>
+
+                                <p>
+                                    "The design is clean, the fit feels
+                                    comfortable, and the sound makes
+                                    listening more enjoyable."
+                                </p>
+
+                            </div>
+
+
+                            <div class="detail-review-card">
+
+                                <div class="detail-review-person">
+                                    <img src="../media/person2.jpg"
+                                        alt="James Wilson">
+
+                                    <div>
+                                        <h3>James Wilson</h3>
+                                        <p>Everyday User</p>
+                                    </div>
+                                </div>
+
+                                <div class="rating-stars">★★★★★</div>
+
+                                <p>
+                                    "I like the simple look and the
+                                    convenience of wireless listening
+                                    throughout my day."
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- RELATED PRODUCTS -->
+        <section class="related-products">
+            <div class="bg">
+                <div class="container">
+                    <div class="contant">
+
+                        <div class="related-heading">
+                            <p class="small-title">RELATED PRODUCTS</p>
+                            <h2>You Might <span>Also Like</span></h2>
+                            <p>Complete your experience with more Aurabuds.</p>
+                        </div>
+
+                        <div class="related-product-list">
+
+                            <article class="related-product">
+
+                                <a href="products.html"
+                                    class="related-product-image">
+                                    <img src="../media/earbuds-dark.jpg"
+                                        alt="Aurabuds Pro">
+                                </a>
+
+                                <div class="related-product-info">
+                                    <h3>
+                                        <a href="products.html">Aurabuds Pro</a>
+                                    </h3>
+
+                                    <p>Color: Matte Black</p>
+                                    <strong>$79.00</strong>
+
+                                    <button type="button"
+                                        class="related-add-cart"
+                                        data-product="Aurabuds Pro"
+                                        data-price="79">
+                                        Add to Cart
+                                    </button>
+                                </div>
+
+                            </article>
+
+
+                            <article class="related-product">
+
+                                <a href="products.html"
+                                    class="related-product-image">
+                                    <img src="../media/earbuds-silver.jpg"
+                                        alt="Aurabuds Case">
+                                </a>
+
+                                <div class="related-product-info">
+                                    <h3>
+                                        <a href="products.html">Aurabuds Case</a>
+                                    </h3>
+
+                                    <p>Color: Silver</p>
+                                    <strong>$39.00</strong>
+
+                                    <button type="button"
+                                        class="related-add-cart"
+                                        data-product="Aurabuds Case"
+                                        data-price="39">
+                                        Add to Cart
+                                    </button>
+                                </div>
+
+                            </article>
+
+
+                            <article class="related-product">
+
+                                <a href="products.html"
+                                    class="related-product-image">
+                                    <img src="../media/white-earbuds.avif"
+                                        alt="Aurabuds Lite">
+                                </a>
+
+                                <div class="related-product-info">
+                                    <h3>
+                                        <a href="products.html">Aurabuds Lite</a>
+                                    </h3>
+
+                                    <p>Color: Arctic White</p>
+                                    <strong>$49.00</strong>
+
+                                    <button type="button"
+                                        class="related-add-cart"
+                                        data-product="Aurabuds Lite"
+                                        data-price="49">
+                                        Add to Cart
+                                    </button>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="bg">
+            <div class="container">
+                <div class="contant">
+
+                    <div class="footer-logo">
+                        <a href="../../index.html">
+                            <img src="../media/logo.png" alt="Aurabuds Logo">
+                        </a>
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="../../index.html#home">Home</a>
+                        <a href="../../index.html#features">Features</a>
+                        <a href="../../index.html#reviews">Reviews</a>
+                        <a href="../../index.html#contact">Contact</a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>2026 Aurabuds. All rights reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- PRODUCT PAGE JAVASCRIPT -->
+    <!-- <script>
+        const mainImage = document.getElementById("main-product-image");
+        const thumbnails = document.querySelectorAll(".thumbnail");
+        const quantityInput = document.getElementById("product-quantity");
+        const quantityMinus = document.getElementById("quantity-minus");
+        const quantityPlus = document.getElementById("quantity-plus");
+        const cartCount = document.getElementById("cart-count");
+        const notice = document.getElementById("product-notice");
+
+        const productName = "Aurabuds Zero";
+        const productPrice = 89;
+
+        // Product image gallery
+        thumbnails.forEach(function (thumbnail) {
+            thumbnail.addEventListener("click", function () {
+                mainImage.src = thumbnail.dataset.image;
+
+                thumbnails.forEach(function (item) {
+                    item.classList.remove("active");
+                });
+
+                thumbnail.classList.add("active");
+            });
+        });
+
+        // Quantity controls
+        quantityMinus.addEventListener("click", function () {
+            let quantity = Number(quantityInput.value) || 1;
+
+            quantityInput.value = Math.max(1, quantity - 1);
+        });
+
+        quantityPlus.addEventListener("click", function () {
+            let quantity = Number(quantityInput.value) || 1;
+
+            quantityInput.value = Math.min(99, quantity + 1);
+        });
+
+        quantityInput.addEventListener("change", function () {
+            let quantity = Number(quantityInput.value) || 1;
+
+            quantityInput.value = Math.min(99, Math.max(1, quantity));
+        });
+
+        // Color selection
+        let selectedColor = "Midnight Blue";
+
+        document.querySelectorAll(".color-choice").forEach(function (button) {
+            button.addEventListener("click", function () {
+                selectedColor = button.dataset.color;
+
+                document.querySelectorAll(".color-choice").forEach(function (item) {
+                    item.classList.remove("selected");
+                    item.setAttribute("aria-pressed", "false");
+                });
+
+                button.classList.add("selected");
+                button.setAttribute("aria-pressed", "true");
+            });
+        });
+
+        // Update header cart count from local storage
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem("aurabudsCart") || "[]");
+
+            let total = cart.reduce(function (sum, item) {
+                return sum + Number(item.quantity || 0);
+            }, 0);
+
+            cartCount.textContent = total;
+        }
+
+        // Add products to cart
+        function addProductToCart(name, price, quantity, color, variant) {
+            let cart = JSON.parse(localStorage.getItem("aurabudsCart") || "[]");
+
+            let existingProduct = cart.find(function (item) {
+                return item.name === name &&
+                    item.color === color &&
+                    item.variant === variant;
+            });
+
+            if (existingProduct) {
+                existingProduct.quantity += quantity;
+            } else {
+                cart.push({
+                    name: name,
+                    price: price,
+                    quantity: quantity,
+                    color: color,
+                    variant: variant
+                });
+            }
+
+            localStorage.setItem("aurabudsCart", JSON.stringify(cart));
+
+            updateCartCount();
+
+            notice.textContent = name + " added to your cart.";
+        }
+
+        document.getElementById("detail-add-cart").addEventListener("click", function () {
+            let quantity = Number(quantityInput.value) || 1;
+            let variant = document.getElementById("product-variant").value;
+
+            addProductToCart(
+                productName,
+                productPrice,
+                quantity,
+                selectedColor,
+                variant
+            );
+        });
+
+        // Related products
+        document.querySelectorAll(".related-add-cart").forEach(function (button) {
+            button.addEventListener("click", function () {
+                addProductToCart(
+                    button.dataset.product,
+                    Number(button.dataset.price),
+                    1,
+                    "Default",
+                    "Standard"
+                );
+            });
+        });
+
+        // Wishlist
+        document.getElementById("wishlist-btn").addEventListener("click", function () {
+            let wishlist = JSON.parse(localStorage.getItem("aurabudsWishlist") || "[]");
+            let button = this;
+            let icon = button.querySelector("i");
+
+            let exists = wishlist.some(function (item) {
+                return item.name === productName && item.color === selectedColor;
+            });
+
+            if (exists) {
+                wishlist = wishlist.filter(function (item) {
+                    return !(item.name === productName && item.color === selectedColor);
+                });
+
+                button.setAttribute("aria-pressed", "false");
+                icon.className = "fa-regular fa-heart";
+                button.querySelector("span").textContent = "Add to Wishlist";
+                notice.textContent = "Removed from your wishlist.";
+            } else {
+                wishlist.push({
+                    name: productName,
+                    price: productPrice,
+                    color: selectedColor
+                });
+
+                button.setAttribute("aria-pressed", "true");
+                icon.className = "fa-solid fa-heart";
+                button.querySelector("span").textContent = "Added to Wishlist";
+                notice.textContent = "Added to your wishlist.";
+            }
+
+            localStorage.setItem("aurabudsWishlist", JSON.stringify(wishlist));
+        });
+
+        // Product information tabs
+        const tabs = document.querySelectorAll(".overview-tab");
+        const panels = document.querySelectorAll(".overview-panel");
+
+        tabs.forEach(function (tab) {
+            tab.addEventListener("click", function () {
+                const selectedTab = tab.dataset.tab;
+
+                tabs.forEach(function (item) {
+                    item.classList.remove("active");
+                    item.setAttribute("aria-selected", "false");
+                });
+
+                panels.forEach(function (panel) {
+                    panel.classList.remove("active");
+                    panel.hidden = true;
+                });
+
+                tab.classList.add("active");
+                tab.setAttribute("aria-selected", "true");
+
+                const selectedPanel = document.getElementById(
+                    "panel-" + selectedTab
+                );
+
+                selectedPanel.hidden = false;
+                selectedPanel.classList.add("active");
+            });
+        });
+
+        // Enlarge product image
+        document.getElementById("image-zoom").addEventListener("click", function () {
+            mainImage.classList.toggle("zoomed");
+
+            this.setAttribute(
+                "aria-label",
+                mainImage.classList.contains("zoomed")
+                    ? "Return to normal product image"
+                    : "Enlarge product image"
+            );
+        });
+
+        updateCartCount();
+    </script> -->
+
+</body>
+</html>

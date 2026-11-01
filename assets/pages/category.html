@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Aurabuds</title>
+
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="bg">
+            <div class="container">
+                <div class="contant">
+                    <div class="logo">
+                        <img src="../media/logo.png" alt="Aurabuds Logo">
+                    </div>
+
+                    <div class="nav">
+                        <a href="../../index.html">Home</a>
+                        <a href="">Categories</a>
+                        <a href="">About Us</a>
+                    </div>
+
+                    <div class="header-actions">
+                        <a class="cart-btn" href="cart.html" aria-label="View shopping cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                        <div class="header-btn">
+                            <a href="#products">Get Yours</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-hero">
+            <div class="bg">
+                <div class="container">
+                    <div class="contant">
+                        <div class="products-hero-text">
+                            <p class="small-title">OUR PRODUCTS</p>
+                            <h1>Find Your Perfect <span>Aurabuds.</span></h1>
+                            <p>Explore our range of wireless earbuds and accessories, designed for every moment of your day.</p>
+                        </div>
+
+                        <div class="products-hero-image">
+                            <img src="../media/earbuds-no-background.png" alt="Aurabuds wireless earbuds in charging case">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-catalog" id="products">
+            <div class="bg">
+                <div class="container">
+                    <div class="contant catalog-layout">
+
+                        
+
+                        <aside class="catalog-sidebar">
+                            <form id="filter-form">
+                                <div class="filter-group">
+                                    <h2>Categories</h2>
+
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="all" checked>
+                                        <span>All Products <small>(5)</small></span>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="earbuds">
+                                        <span>Earbuds <small>(3)</small></span>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="cases">
+                                        <span>Cases <small>(1)</small></span>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="radio" name="category" value="accessories">
+                                        <span>Accessories <small>(1)</small></span>
+                                    </label>
+                                </div>
+
+                                <div class="filter-group">
+                                    <h2>Color</h2>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="color" value="black">
+                                        <span class="filter-color color-black"></span>
+                                        <span>Black <small>(2)</small></span>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="color" value="white">
+                                        <span class="filter-color color-white"></span>
+                                        <span>White <small>(2)</small></span>
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="color" value="silver">
+                                        <span class="filter-color color-silver"></span>
+                                        <span>Silver <small>(1)</small></span>
+                                    </label>
+                                </div>
+
+                                <div class="filter-group">
+                                    <h2>Price Range</h2>
+                                    <div class="price-slider">
+                                        <input type="range" id="price-range" min="20" max="100" value="100" aria-label="Maximum price">
+                                    </div>
+                                    <div class="price-values">
+                                        <span>$20</span>
+                                        <span id="max-price-label">$100</span>
+                                    </div>
+                                </div>
+
+                                <div class="filter-group filter-group-last">
+                                    <label for="sidebar-sort" class="filter-heading">Sort By</label>
+                                    <select id="sidebar-sort" class="catalog-select">
+                                        <option value="featured">Featured</option>
+                                        <option value="price-low">Price: Low to High</option>
+                                        <option value="price-high">Price: High to Low</option>
+                                        <option value="name">Name: A to Z</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </aside>
+
+                        <div class="catalog-main">
+                            <div class="catalog-toolbar">
+                                <p id="results-count">Showing 5 results</p>
+                                <div class="toolbar-sort">
+                                    <label for="top-sort">Sort by:</label>
+                                    <select id="top-sort" class="catalog-select">
+                                        <option value="featured">Featured</option>
+                                        <option value="price-low">Price: Low to High</option>
+                                        <option value="price-high">Price: High to Low</option>
+                                        <option value="name">Name: A to Z</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="catalog-products" id="catalog-products">
+                                <article class="catalog-product" data-category="earbuds" data-color="black" data-price="89" data-name="Aurabuds Zero">
+                                    <div class="catalog-product-image">
+                                        <img src="../media/earbuds-dark.jpg" alt="Aurabuds Zero midnight blue earbuds">
+                                    </div>
+                                    <div class="catalog-product-info">
+                                        <h2>Aurabuds Zero</h2>
+                                        <p class="product-color-label">Color: Midnight Blue</p>
+                                        <div class="product-rating"><span>★★★★★</span> <small>(4.8)&nbsp; 124 reviews</small></div>
+                                        <p class="catalog-price">$89.00</p>
+                                        <button class="catalog-add-cart" type="button" data-product="Aurabuds Zero" data-price="89">
+                                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                        </button>
+                                    </div>
+                                </article>
+
+                                <article class="catalog-product" data-category="earbuds" data-color="white" data-price="59" data-name="Aurabuds Air">
+                                    <div class="catalog-product-image">
+                                        <img src="../media/white-earbuds.avif" alt="Aurabuds Air pearl white earbuds">
+                                    </div>
+                                    <div class="catalog-product-info">
+                                        <h2>Aurabuds Air</h2>
+                                        <p class="product-color-label">Color: Pearl White</p>
+                                        <div class="product-rating"><span>★★★★★</span> <small>(4.6)&nbsp; 98 reviews</small></div>
+                                        <p class="catalog-price">$59.00</p>
+                                        <button class="catalog-add-cart" type="button" data-product="Aurabuds Air" data-price="59">
+                                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                        </button>
+                                    </div>
+                                </article>
+
+                                <article class="catalog-product" data-category="cases" data-color="silver" data-price="39" data-name="Aurabuds Case">
+                                    <div class="catalog-product-image">
+                                        <img src="../media/earbuds-silver.jpg" alt="Aurabuds silver charging case">
+                                    </div>
+                                    <div class="catalog-product-info">
+                                        <h2>Aurabuds Case</h2>
+                                        <p class="product-color-label">Color: Silver</p>
+                                        <div class="product-rating"><span>★★★★★</span> <small>(4.4)&nbsp; 76 reviews</small></div>
+                                        <p class="catalog-price">$39.00</p>
+                                        <button class="catalog-add-cart" type="button" data-product="Aurabuds Case" data-price="39">
+                                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                        </button>
+                                    </div>
+                                </article>
+
+                                <article class="catalog-product" data-category="accessories" data-color="white" data-price="49" data-name="Aurabuds Lite">
+                                    <div class="catalog-product-image">
+                                        <img src="../media/white-earbuds.avif" alt="Aurabuds Lite white wireless earbuds">
+                                    </div>
+                                    <div class="catalog-product-info">
+                                        <h2>Aurabuds Lite</h2>
+                                        <p class="product-color-label">Color: Arctic White</p>
+                                        <div class="product-rating"><span>★★★★★</span> <small>(4.2)&nbsp; 63 reviews</small></div>
+                                        <p class="catalog-price">$49.00</p>
+                                        <button class="catalog-add-cart" type="button" data-product="Aurabuds Lite" data-price="49">
+                                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                        </button>
+                                    </div>
+                                </article>
+
+                                <article class="catalog-product" data-category="earbuds" data-color="black" data-price="79" data-name="Aurabuds Pro">
+                                    <div class="catalog-product-image">
+                                        <img src="../media/earbuds-dark.jpg" alt="Aurabuds Pro matte black earbuds">
+                                    </div>
+                                    <div class="catalog-product-info">
+                                        <h2>Aurabuds Pro</h2>
+                                        <p class="product-color-label">Color: Matte Black</p>
+                                        <div class="product-rating"><span>★★★★★</span> <small>(4.9)&nbsp; 112 reviews</small></div>
+                                        <p class="catalog-price">$79.00</p>
+                                        <button class="catalog-add-cart" type="button" data-product="Aurabuds Pro" data-price="79">
+                                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <nav class="catalog-pagination" aria-label="Product pages">
+                                <button type="button" class="page-arrow" aria-label="Previous page" disabled>
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button type="button" class="page-number active" aria-current="page">1</button>
+                                <button type="button" class="page-number" disabled>2</button>
+                                <button type="button" class="page-arrow" aria-label="Next page" disabled>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="bg">
+            <div class="container">
+                <div class="contant">
+                    <div class="footer-logo">
+                        <img src="../media/logo.png" alt="Aurabuds Logo">
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="../../index.html#home">Home</a>
+                        <a href="../../index.html#features">Features</a>
+                        <a href="../../index.html#reviews">Reviews</a>
+                        <a href="../../index.html#contact">Contact</a>
+                    </div>
+
+                    <div class="copyright">
+                        <p>2026 Aurabuds. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script>
+        // Keep the header cart count in sync with the count stored by the homepage.
+        const cartCount = document.querySelector(".cart-count");
+        cartCount.textContent = localStorage.getItem("aurabudsCartCount") || "0";
+
+        // Demo cart interaction. Connect this to your full cart data when your cart page is ready.
+        document.querySelectorAll(".catalog-add-cart").forEach((button) => {
+            button.addEventListener("click", () => {
+                const count = Number(localStorage.getItem("aurabudsCartCount")) || 0;
+                localStorage.setItem("aurabudsCartCount", String(count + 1));
+                cartCount.textContent = String(count + 1);
+
+                const original = button.innerHTML;
+                button.innerHTML = '<i class="fa-solid fa-check"></i> Added';
+                setTimeout(() => button.innerHTML = original, 900);
+            });
+        });
+
+        const productGrid = document.querySelector("#catalog-products");
+        const productCards = Array.from(productGrid.querySelectorAll(".catalog-product"));
+        const resultsCount = document.querySelector("#results-count");
+        const categoryInputs = document.querySelectorAll('input[name="category"]');
+        const colorInputs = document.querySelectorAll('input[name="color"]');
+        const priceRange = document.querySelector("#price-range");
+        const maxPriceLabel = document.querySelector("#max-price-label");
+        const sortInputs = [document.querySelector("#top-sort"), document.querySelector("#sidebar-sort")];
+
+        function updateProducts() {
+            const category = document.querySelector('input[name="category"]:checked').value;
+            const selectedColors = Array.from(colorInputs).filter(input => input.checked).map(input => input.value);
+            const maxPrice = Number(priceRange.value);
+            const sortValue = sortInputs[0].value;
+
+            maxPriceLabel.textContent = "$" + maxPrice;
+
+            let visibleProducts = productCards.filter(card => {
+                const categoryMatch = category === "all" || card.dataset.category === category;
+                const colorMatch = selectedColors.length === 0 || selectedColors.includes(card.dataset.color);
+                const priceMatch = Number(card.dataset.price) <= maxPrice;
+                const visible = categoryMatch && colorMatch && priceMatch;
+                card.hidden = !visible;
+                return visible;
+            });
+
+            visibleProducts.sort((a, b) => {
+                if (sortValue === "price-low") return Number(a.dataset.price) - Number(b.dataset.price);
+                if (sortValue === "price-high") return Number(b.dataset.price) - Number(a.dataset.price);
+                if (sortValue === "name") return a.dataset.name.localeCompare(b.dataset.name);
+                return productCards.indexOf(a) - productCards.indexOf(b);
+            });
+
+            visibleProducts.forEach(card => productGrid.appendChild(card));
+            resultsCount.textContent = "Showing " + visibleProducts.length + " results";
+        }
+
+        categoryInputs.forEach(input => input.addEventListener("change", updateProducts));
+        colorInputs.forEach(input => input.addEventListener("change", updateProducts));
+        priceRange.addEventListener("input", updateProducts);
+        sortInputs.forEach(select => select.addEventListener("change", () => {
+            sortInputs.forEach(other => {
+                if (other !== select) other.value = select.value;
+            });
+            updateProducts();
+        }));
+
+        updateProducts();
+    </script> -->
+</body>
+</html>
