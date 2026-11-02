@@ -1,4 +1,7 @@
-a, input, img, div {
+a,
+input,
+img,
+div {
     box-sizing: border-box;
 }
 
@@ -92,6 +95,7 @@ header {
 .category-search input::-webkit-search-cancel-button {
     cursor: pointer;
 }
+
 .category-search {
     width: 100%;
     margin-bottom: 22px;
@@ -284,7 +288,7 @@ header .contant {
     color: #a7a7a7;
 }
 
-.hero-text > p:not(.small-title) {
+.hero-text>p:not(.small-title) {
     max-width: 470px;
     color: #b8b8b8;
     font-size: 15px;
@@ -326,8 +330,8 @@ header .contant {
     margin: 0 0 13px;
 }
 
-.section-title > p:last-child,
-.review-heading > p:last-child {
+.section-title>p:last-child,
+.review-heading>p:last-child {
     color: #b0b0b0;
     line-height: 1.7;
     margin: 0;
@@ -357,10 +361,10 @@ header .contant {
     transition: border-color 0.3s, transform 0.3s;
 }
 
-/* .product-card:hover {
+.product-card:hover {
     transform: translateY(-4px);
     border-color: #777;
-} */
+}
 
 /* Product image */
 
@@ -371,12 +375,10 @@ header .contant {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: radial-gradient(
-        ellipse at center,
-        #292929 0%,
-        #111 57%,
-        #0b0b0b 100%
-    );
+    background: radial-gradient(ellipse at center,
+            #292929 0%,
+            #111 57%,
+            #0b0b0b 100%);
     border-radius: 5px;
     margin-bottom: 16px;
 }
@@ -389,10 +391,10 @@ header .contant {
     transition: transform 0.4s, opacity 0.3s;
 }
 
-/* .product-card:hover .product-image img {
+.product-card:hover .product-image img {
     transform: scale(1.05);
     opacity: 0.65;
-} */
+}
 
 /* Product information */
 
@@ -442,21 +444,19 @@ header .contant {
 
 /* Buttons hidden by default */
 
+
 .product-actions {
     display: flex;
     align-items: stretch;
     gap: 10px;
-    margin-top: 0;
-    max-height: 0;
-    overflow: hidden;
+    margin-top: 15px;
+    max-height: 55px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
     transition:
         opacity 0.3s ease,
         transform 0.3s ease,
-        max-height 0.3s ease,
-        margin-top 0.3s ease,
         visibility 0.3s ease;
 }
 
@@ -486,7 +486,7 @@ header .contant {
 
 .product-actions a {
     text-decoration: none;
-    border: 1px solid silver ;
+    border: 1px solid silver;
 }
 
 .add-cart {
@@ -544,11 +544,11 @@ header .contant {
     position: relative;
 }
 
-.feature-item + .feature-item {
+.feature-item+.feature-item {
     border-left: 1px solid #303030;
 }
 
-.feature-item > i {
+.feature-item>i {
     display: block;
     color: #e2e2e2;
     font-size: 29px;
@@ -625,7 +625,7 @@ header .contant {
     margin-bottom: 10px;
 }
 
-.review-card > p {
+.review-card>p {
     color: #c0c0c0;
     font-size: 13px;
     line-height: 1.8;
@@ -1398,12 +1398,10 @@ footer .contant {
 
 /* Products Hero */
 .products-hero {
-    background: radial-gradient(
-        ellipse at 78% 45%,
-        #292929 0%,
-        #111 40%,
-        #080808 76%
-    );
+    background: radial-gradient(ellipse at 78% 45%,
+            #292929 0%,
+            #111 40%,
+            #080808 76%);
     border-bottom: 1px solid #303030;
     overflow: hidden;
 }
@@ -1442,7 +1440,7 @@ footer .contant {
     color: #a8a8a8;
 }
 
-.products-hero-text > p:last-child {
+.products-hero-text>p:last-child {
     max-width: 490px;
     color: #d0d0d0;
     font-size: 15px;
@@ -1665,7 +1663,7 @@ footer .contant {
     margin-bottom: 18px;
 }
 
-.catalog-toolbar > p {
+.catalog-toolbar>p {
     color: #e1e1e1;
     font-size: 13px;
     margin: 0;
@@ -1727,12 +1725,10 @@ footer .contant {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: radial-gradient(
-        ellipse at center,
-        #292929 0%,
-        #111 58%,
-        #080808 100%
-    );
+    background: radial-gradient(ellipse at center,
+            #292929 0%,
+            #111 58%,
+            #080808 100%);
 }
 
 .catalog-product-image img {
@@ -1771,7 +1767,7 @@ footer .contant {
     margin-bottom: 16px;
 }
 
-.product-rating > span {
+.product-rating>span {
     color: #f5f5f5;
     font-size: 15px;
     letter-spacing: 1px;
@@ -1873,7 +1869,7 @@ footer .contant {
     border-bottom: 1px solid #303030;
 }
 
-.product-detail > .bg > .container > .contant {
+.product-detail>.bg>.container>.contant {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: start;
@@ -1934,7 +1930,7 @@ footer .contant {
         radial-gradient(ellipse at center, #202324 0%, #101111 55%, #090909 100%);
 }
 
-.product-main-image > img {
+.product-main-image>img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -1942,7 +1938,7 @@ footer .contant {
     transition: transform 0.3s ease;
 }
 
-.product-main-image > img.zoomed {
+.product-main-image>img.zoomed {
     transform: scale(1.45);
     cursor: zoom-out;
 }
@@ -1975,7 +1971,7 @@ footer .contant {
     color: #eee;
 }
 
-.product-information > .small-title {
+.product-information>.small-title {
     margin: 0 0 9px;
     color: #c3c3c3;
     font-size: 10px;
@@ -2249,7 +2245,7 @@ footer .contant {
     border-bottom: 1px solid #303030;
 }
 
-.product-overview > .bg > .container > .contant {
+.product-overview>.bg>.container>.contant {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
@@ -2312,7 +2308,7 @@ footer .contant {
     color: #b9b9b9;
 }
 
-.overview-panel > p {
+.overview-panel>p {
     margin: 0 0 15px;
     color: #d0d0d0;
     font-size: 12px;
@@ -2370,7 +2366,7 @@ footer .contant {
     flex-direction: column;
 }
 
-.specification-list > div {
+.specification-list>div {
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -2396,7 +2392,7 @@ footer .contant {
     border-bottom: 1px solid #303030;
 }
 
-.detail-reviews > .bg > .container > .contant {
+.detail-reviews>.bg>.container>.contant {
     display: block;
     padding-top: 25px;
     padding-bottom: 24px;
@@ -2427,8 +2423,8 @@ footer .contant {
     color: #bcbcbc;
 }
 
-.detail-reviews-heading > p:last-child,
-.related-heading > p:last-child {
+.detail-reviews-heading>p:last-child,
+.related-heading>p:last-child {
     margin: 0;
     color: #c3c3c3;
     font-size: 12px;
@@ -2479,7 +2475,7 @@ footer .contant {
     font-size: 12px;
 }
 
-.detail-review-card > p {
+.detail-review-card>p {
     margin: 0;
     color: #ccc;
     font-size: 12px;
@@ -2493,7 +2489,7 @@ footer .contant {
     border-bottom: 1px solid #303030;
 }
 
-.related-products > .bg > .container > .contant {
+.related-products>.bg>.container>.contant {
     display: block;
     padding-top: 20px;
     padding-bottom: 28px;
@@ -2504,7 +2500,8 @@ footer .contant {
     font-size: 9px;
 }
 
-.related-heading h2, .detail-reviews-heading h2 {
+.related-heading h2,
+.detail-reviews-heading h2 {
 
     margin: 40px 0px;
     font-size: 40px;
@@ -2573,13 +2570,13 @@ footer .contant {
     color: #a5dff5;
 }
 
-.related-product-info > p {
+.related-product-info>p {
     margin: 0 0 7px;
     color: #aaa;
     font-size: 10px;
 }
 
-.related-product-info > strong {
+.related-product-info>strong {
     display: block;
     margin-bottom: 12px;
     color: #fff;
@@ -2644,7 +2641,7 @@ footer .contant {
     color: #a7a7a7;
 }
 
-.about-hero-text > p:not(.small-title) {
+.about-hero-text>p:not(.small-title) {
     max-width: 480px;
     color: #b8b8b8;
     font-size: 15px;
@@ -2729,7 +2726,7 @@ footer .contant {
     margin: 0 0 22px;
 }
 
-.story-text > p:not(.small-title) {
+.story-text>p:not(.small-title) {
     color: #aaaaaa;
     font-size: 14px;
     line-height: 1.9;
@@ -2757,8 +2754,8 @@ footer .contant {
     margin: 0 0 15px;
 }
 
-.purpose-heading > p:last-child,
-.benefits-heading > p:last-child {
+.purpose-heading>p:last-child,
+.benefits-heading>p:last-child {
     color: #aaaaaa;
     font-size: 14px;
     line-height: 1.8;
@@ -2806,7 +2803,7 @@ footer .contant {
     margin: 0 0 14px;
 }
 
-.purpose-card > p {
+.purpose-card>p {
     color: #aaaaaa;
     font-size: 14px;
     line-height: 1.9;
@@ -2868,7 +2865,7 @@ footer .contant {
     margin: 0 0 12px;
 }
 
-.benefit-card > p {
+.benefit-card>p {
     color: #aaaaaa;
     font-size: 13px;
     line-height: 1.8;
@@ -2899,7 +2896,7 @@ footer .contant {
     margin: 0 0 15px;
 }
 
-.about-cta > .bg > .container > .contant > p:not(.small-title) {
+.about-cta>.bg>.container>.contant>p:not(.small-title) {
     color: #aaaaaa;
     font-size: 14px;
     line-height: 1.8;
@@ -2969,7 +2966,7 @@ footer .contant {
     color: #a7a7a7;
 }
 
-.contact-hero-text > p:not(.small-title) {
+.contact-hero-text>p:not(.small-title) {
     max-width: 480px;
     color: #b8b8b8;
     font-size: 15px;
@@ -3196,7 +3193,7 @@ footer .contant {
     color: #a7a7a7;
 }
 
-.contact-faq-heading > p:last-child {
+.contact-faq-heading>p:last-child {
     max-width: 390px;
     color: #aaaaaa;
     font-size: 14px;
@@ -3264,7 +3261,7 @@ footer .contant {
     transform: rotate(45deg);
 }
 
-.contact-faq-item > p {
+.contact-faq-item>p {
     color: #aaaaaa;
     font-size: 13px;
     line-height: 1.8;
